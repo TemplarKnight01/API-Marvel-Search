@@ -1,0 +1,29 @@
+.nav-page{
+	height: 135px;
+}
+
+.nav-wrapper{
+	background-color: #f0141e;
+}
+
+.nav-image{
+	width: 330px;
+	height: 135px
+}
+
+.searcher{
+	margin-top: 135px;
+}
+
+.btn-searcher{
+	margin-top: 9px
+}
+
+.input-field{
+	margin-top: 0;
+}
+
+#img_container{
+	height: 510px;
+	width: 510px
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link type="text/css" rel="stylesheet" href="librarys/css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="styles/style.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="librarys/javascript/md5-min.js"></script>
+	<script src="librarys/javascript/jquery-3.2.1.min.js"></script>
+	<script src="librarys/javascript/materialize.min.js"></script>
+	<script src="scripts/marvel-search.js"></script>
+	<title>API Marvel Search</title>
+	<link rel="stylesheet" href="">
+</head>
+<body class="">
+	<!-- Nav -->
+	<div class="navbar-fixed">
+	    <nav class="nav-page">
+	      <div class="nav-wrapper">
+	        <a href="#!" class="brand-logo center"><img class="nav-image" src="images/Marvel-logo.png" alt=""></a>
+	        <ul class="right hide-on-med-and-down">
+	        </ul>
+	      </div>   
+	    </nav>
+   </div>
+   <!-- Search -->
+   <div class="row searcher">
+   		<div class="input-field col s4 push-s3 pull-s3">
+   				<input id="character" type="text" placeholder="Character Name" name="">
+   		</div>
+   		<div class="btn-searcher col s2 push-s3 pull-s3">
+   			<button id="execute" class="btn waves-effect waves-light">
+   				<span>Search</span><i class="material-icons right">search</i>
+   			</button>
+   		</div>
+   </div>
+   <!-- Results -->
+   <!-- Image -->
+   <div class="row">
+   		<div class="col 6s push-s2">
+   			<div class="card">
+   				<div class="card-image">
+   					<img id="img_container" src="images/default-hero-image.png" alt="">
+   					<span class="card-title"></span>
+   				</div>
+   			</div>
+   		</div>
+   	<!-- Description -->
+   		<div class="contanier_description col 4s push-s2">
+   			<div class="card">
+   				<div class="card-content">
+   					<span class="card-title">Description</span>
+   					<p id="description_character">
+   					</p>
+   				</div>
+	   			<div class="card-action">
+	   				<a id="external_link">Wiki</a>
+	   			</div>
+   			</div>
+   		</div>
+   </div>
+</body>
+</html>
