@@ -6,6 +6,7 @@
 	<link type="text/css" rel="stylesheet" href="librarys/css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="styles/style.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Marvel|Pangolin" rel="stylesheet"> 
 	<script src="librarys/javascript/md5-min.js"></script>
 	<script src="librarys/javascript/jquery-3.2.1.min.js"></script>
 	<script src="librarys/javascript/materialize.min.js"></script>
@@ -27,10 +28,11 @@
    <!-- Search -->
    <div class="row searcher">
    		<div class="input-field col s4 push-s3 pull-s3">
-   				<input id="character" type="text" placeholder="Character Name" name="">
+   				<input id="character" type="text" placeholder="" class="validate">
+               <label for="character">Character Name</label>
    		</div>
    		<div class="btn-searcher col s2 push-s3 pull-s3">
-   			<button id="execute" class="btn waves-effect waves-light">
+   			<button id="execute" class="btn waves-effect waves-light red accent-4">
    				<span>Search</span><i class="material-icons right">search</i>
    			</button>
    		</div>
@@ -41,24 +43,45 @@
    		<div class="col 6s push-s2">
    			<div class="card">
    				<div class="card-image">
+                  <!-- Preload -->
+                  <div class="preloader-wrapper big active">
+                      <div class="spinner-layer spinner">
+                        <div class="circle-clipper left">
+                           <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                           <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                           <div class="circle"></div>
+                        </div>
+                      </div>
+                 </div>
+                 <!-- Finnish Preload -->
    					<img id="img_container" src="images/default-hero-image.png" alt="">
-   					<span class="card-title"></span>
    				</div>
    			</div>
    		</div>
    	<!-- Description -->
-   		<div class="contanier_description col 4s push-s2">
-   			<div class="card">
-   				<div class="card-content">
-   					<span class="card-title">Description</span>
-   					<p id="description_character">
-   					</p>
-   				</div>
-	   			<div class="card-action">
-	   				<a id="external_link">Wiki</a>
-	   			</div>
-   			</div>
-   		</div>
+           <div class="contanier_description col s4 push-s2">
+            <div class="card">
+               <!-- Preload -->
+               <div class="progress">
+                  <div class="indeterminate"></div>
+               </div>
+               <!-- Finnish Preload -->
+               <div class="card-content">
+                  <span id="hero_name" class="card-title"></span>
+                  <span class="card-title">Description:</span>
+                  <p id="description_character">
+                  </p>
+               </div>
+               <div class="card-action">
+                  <a id="external_link_1" target="_blank">Wiki</a>
+                  <a id="external_link_2" target="_blank">More information</a>
+               </div>
+            </div>
+         </div> 
    </div>
 </body>
 </html>

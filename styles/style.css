@@ -1,3 +1,8 @@
+body{
+	font-family: 'Pangolin', sans-serif;
+}
+
+/* Nav */
 .nav-page{
 	height: 135px;
 }
@@ -10,7 +15,7 @@
 	width: 330px;
 	height: 135px
 }
-
+/* Input */
 .searcher{
 	margin-top: 135px;
 }
@@ -23,7 +28,57 @@
 	margin-top: 0;
 }
 
+/* label color */
+.input-field label {
+     color: #f0141e;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+     color: #f0141e;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #f0141e;
+	box-shadow: 0 1px 0 0 #f0141e;
+}
+
+/* Cards */
 #img_container{
 	height: 510px;
 	width: 510px
+}
+
+.card-title{
+	font-size: 50px;
+}
+
+/* Preloads */
+.preloader-wrapper{
+	margin: 205px;
+	margin-top: 205px
+}
+
+.spinner{
+	border-color: #f0141e
+}
+
+.progress .indeterminate{
+	background-color: #f0141e
+}
+
+.progress{
+	background-color: #F9A5A5
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+	color: #f0141e;
+	margin-right: 24px;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover{
+	color: #F9A5A5;
+	margin-right: 24px;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
 }
